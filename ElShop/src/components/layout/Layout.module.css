@@ -1,0 +1,63 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    background: #f8fafc;
+    width: 100%; /* Займаємо всю ширину вікна */
+}
+
+.nav {
+    width: 240px;
+    min-width: 240px; /* Щоб панель не стискалася */
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    box-sizing: border-box; /* Щоб падінги не роздували ширину */
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 20px;
+    color: #24292e;
+    margin-bottom: 48px; /* Відступ від лого до посилань */
+    padding-left: 12px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.links a {
+    padding: 12px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.links a:hover {
+    background: #f1f5f9;
+    color: #24292e;
+}
+
+.links .active {
+    background: #24292e;
+    color: #ffffff !important;
+}
+
+.main {
+    flex: 1; /* Це змушує контент зайняти весь залишок місця */
+    padding: 40px 60px;
+    width: 100%; /* Дозволяємо розтягуватися */
+    max-width: none; /* ПРИБИРАЄМО обмеження ширини, якщо воно було */
+    display: flex;
+    flex-direction: column;
+}
