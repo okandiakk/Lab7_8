@@ -1,0 +1,19 @@
+.imgWrap {
+    border-radius: 24px; /* Дуже закруглені кути */
+    margin-bottom: 12px;
+}
+.body {
+    padding: 0 8px;
+    text-align: center; /* Центрування тексту */
+}
+.name {
+    font-family: 'Inter', sans-serif; /* Якщо підключено шрифт */
+    font-size: 16px;
+    color: #1e293b;
+}
+.heart {
+    top: auto;
+    bottom: 15px; /* Переносимо кнопку ❤️ вниз картки */
+    right: 15px;
+    background: #fff;
+}
